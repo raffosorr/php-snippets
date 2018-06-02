@@ -1,0 +1,13 @@
+#symfony #generate #bundle
+sudo php bin/console generate:bundle
+
+#symfony #generate #entity
+sudo php bin/console doctrine:generate:entity
+sudo php bin/console doctrine:database:create (only if this is the first entity - otherwise this command will do nothing)
+sudo php bin/console doctrine:schema:update --force --dump-sql
+
+#symfony #generate #crud
+sudo php bin/console doctrine:generate:crud
+
+#symfony #rest #restapi #json #xml #serialize #serialization
+See RestController.php
